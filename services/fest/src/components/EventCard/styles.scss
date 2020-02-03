@@ -1,0 +1,31 @@
+.card-detail-meta {
+  display: flex;
+  font-size: 12px;
+  color: #5d5d5d;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.session {
+  font-size: 12px;
+  margin-left: 10px;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.event-card-title {
+  font-size: 18px;
+  color: #3a3a3a;
+  margin-bottom: 0.25rem;
+}
+
+.event-card-description {
+  color: #3a3a3a;
+  font-size: 14px;
+}

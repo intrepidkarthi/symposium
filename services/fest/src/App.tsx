@@ -5,7 +5,6 @@ import "./App.scss";
 const Home = lazy(() => import("./pages/Home"));
 const EventDescription = lazy(() => import("./pages/Event"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
-console.log(Home);
 
 const App = () => {
   return (

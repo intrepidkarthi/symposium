@@ -1,14 +1,24 @@
 import React from "react";
 
 //Components
-import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import { Navbar, Nav, Button } from "react-bootstrap";
 
 //Styles
 import "./styles.scss";
 
-function Header() {
+type HeaderProps = {
+  showModal?: () => void;
+};
+
+function Header({ showModal }: HeaderProps) {
   return (
-    <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+    <Navbar
+      collapseOnSelect
+      expand="sm"
+      bg="dark"
+      variant="dark"
+      className="header"
+    >
       <Navbar.Brand href="#home">Symposium</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
@@ -16,7 +26,7 @@ function Header() {
           <Nav.Link href="#About">About</Nav.Link>
           <Nav.Link href="#Events">Events</Nav.Link>
           <Nav.Link href="#deets">More deets</Nav.Link>
-          <Button size="sm" variant="outline-primary">
+          <Button size="sm" variant="outline-primary" onClick={showModal}>
             Registration
           </Button>
         </Nav>

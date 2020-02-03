@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 //Components
-import { Header } from "components";
+import { Header, RegistrationModal } from "components";
 
 //Styles
 import "./styles.scss";
 
 function Event() {
+  const [show, setShow] = useState(false);
+  const hideRegistrationModal = () => setShow(false);
+  const showRegistrationModal = () => setShow(true);
   return (
-    <div className="container">
-      <Header />
-      <p>Welcome Event Description :)</p>
+    <div>
+      <RegistrationModal show={show} hideModal={hideRegistrationModal} />
+      <Header showModal={showRegistrationModal} />
+      <p>Welcome Event :)</p>
     </div>
   );
 }
