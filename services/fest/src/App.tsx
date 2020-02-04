@@ -9,7 +9,7 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 const App = () => {
   return (
     <Router>
-      <Suspense fallback={<h1>This is a fallback, Lol. Deal with it!</h1>}>
+      <Suspense fallback={<h1>Loading...</h1>}>
         <Switch>
           <Route exact path="/" component={() => <Home />} />
           <Route exact path="/event" component={() => <EventDescription />} />

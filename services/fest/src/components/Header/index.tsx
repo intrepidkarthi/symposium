@@ -19,13 +19,13 @@ function Header({ showModal }: HeaderProps) {
       variant="dark"
       className="header"
     >
-      <Navbar.Brand href="#home">Symposium</Navbar.Brand>
+      <Navbar.Brand href="/">JustForFun</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Link href="#About">About</Nav.Link>
           <Nav.Link href="#Events">Events</Nav.Link>
-          <Nav.Link href="#deets">More deets</Nav.Link>
+          <Nav.Link href="#Contact">Contact</Nav.Link>
           <Button size="sm" variant="outline-primary" onClick={showModal}>
             Registration
           </Button>

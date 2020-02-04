@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 //Components
-import { Header, Banner, RegistrationModal, EventCard } from "components";
+import {
+  Header,
+  Banner,
+  RegistrationModal,
+  EventCard,
+  Footer
+} from "components";
 
 //Styles
 import "./styles.scss";
@@ -50,7 +56,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="footer"></div>
+      <Footer />
     </>
   );
 }

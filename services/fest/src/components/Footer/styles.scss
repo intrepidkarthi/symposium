@@ -1,0 +1,24 @@
+.footer {
+  height: 50px;
+  width: 100%;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  &:before {
+    content: "©";
+    padding-right: 4px;
+  }
+}
+
+.footer-links {
+  a {
+    padding: 0 15px;
+  }
+}
