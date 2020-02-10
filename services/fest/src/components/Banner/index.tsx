@@ -12,13 +12,13 @@ function Banner() {
       <Carousel.Item
         className="banner-image"
         style={{
-          backgroundImage: `url(${"https://mir-s3-cdn-cf.behance.net/project_modules/fs/97074490017985.5e0a1f0560faa.jpg"})`
+          backgroundImage: `url(${"https://images.unsplash.com/photo-1581194441303-1858e2035208?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80"})`
         }}
       ></Carousel.Item>
       <Carousel.Item
         className="banner-image"
         style={{
-          backgroundImage: `url(${"https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e4433051917533.58fe88c814d2d.jpg"})`
+          backgroundImage: `url(${"https://images.unsplash.com/photo-1581194441303-1858e2035208?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80"})`
         }}
       ></Carousel.Item>
       <Carousel.Item

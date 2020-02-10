@@ -7,7 +7,8 @@ import {
   Banner,
   RegistrationModal,
   EventCard,
-  Footer
+  Footer,
+  Map
 } from "components";
 
 //Styles
@@ -27,7 +28,7 @@ function Home() {
       <Header showModal={showRegistrationModal} />
       <Banner />
       <div className="event-box">
-        <div className="align-box-p">
+        <div className="align-box-p mx-auto">
           <div>
             <div className="align-box-m">
               <div className="event-title">
@@ -36,7 +37,7 @@ function Home() {
                   <div className="subHeading">Explore our events</div>
                 </div>
               </div>
-              <div className="event-listing-wrapper">
+              <div className="event-listing-wrapper mx-auto">
                 {Events.map(event => {
                   const { image }: { image: string } = event;
                   return (
@@ -56,6 +57,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Map />
       <Footer />
     </>
   );
